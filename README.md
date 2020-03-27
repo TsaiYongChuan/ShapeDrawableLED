@@ -16,4 +16,7 @@ https://github.com/airbnb/lottie-android
 演示视频
 
 
-![video](https://github.com/TsaiYongChuan/ShapeDrawableApplication/blob/master/WeChat_20200326181034.mp4)
+![image](https://github.com/TsaiYongChuan/ShapeDrawableApplication/blob/master/ezgif.com-optimize.gif)
+
+可以自动适应矩阵形状
+![image](https://github.com/TsaiYongChuan/ShapeDrawableApplication/blob/master/ezgif.com-video-to-gif.gif)
