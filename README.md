@@ -1,4 +1,4 @@
-# ShapeDrawableApplication
+# ShapeDrawableLED
 
 菱形渐变动画，像素采集，颜色采集，自定义矩形展示，LED项目
 
