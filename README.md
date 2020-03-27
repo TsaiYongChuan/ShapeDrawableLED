@@ -13,3 +13,6 @@ https://github.com/airbnb/lottie-android
 
 让美工用AE实现出来，然后转成JSON格式，需要一个插件，具体步骤自己查，然后集成该框架进行绘制，最后在投影上去就可以了
 
+演示视频
+https://github.com/TsaiYongChuan/ShapeDrawableApplication/blob/master/WeChat_20200326181034.mp4
+
