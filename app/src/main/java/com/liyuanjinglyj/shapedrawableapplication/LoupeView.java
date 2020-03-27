@@ -18,8 +18,6 @@ import androidx.annotation.Nullable;
 public class LoupeView extends View {
     private Bitmap bitmap;//获取原图片
     private ShapeDrawable shapeDrawable;//创建一个
-    private final Matrix matrix = new Matrix();//矩阵运算
-    private static final int RADIUS = 160;//半径
     private static final int TIMES = 1;//放大倍数
     private BitmapShader bitmapShader;
 
@@ -35,21 +33,21 @@ public class LoupeView extends View {
         if (loupeViewInterface != null) {
             loupeViewInterface.OnListeningView();
         }
-        if (this.bitmap == null) {
-            bitmapShader = new BitmapShader(
-                    Bitmap.createScaledBitmap(this.bitmap, bitmap.getWidth() * TIMES, bitmap.getHeight() * TIMES, true),//按比例进行缩放图片
-                    Shader.TileMode.CLAMP,
-                    Shader.TileMode.CLAMP);
-        }
-        if (this.shapeDrawable == null) {
-            this.shapeDrawable = new ShapeDrawable();//构造一个椭圆图形
-        }
-        if (bitmapShader != null){
-        this.shapeDrawable.getPaint().setShader(bitmapShader);
-        }
-
-        canvas.drawBitmap(this.bitmap, 0, 0, null);
-        this.shapeDrawable.draw(canvas);
+//        if (this.bitmap == null) {
+//            bitmapShader = new BitmapShader(
+//                    Bitmap.createScaledBitmap(this.bitmap, bitmap.getWidth() * TIMES, bitmap.getHeight() * TIMES, true),//按比例进行缩放图片
+//                    Shader.TileMode.CLAMP,
+//                    Shader.TileMode.CLAMP);
+//        }
+//        if (this.shapeDrawable == null) {
+//            this.shapeDrawable = new ShapeDrawable();
+//        }
+//        if (bitmapShader != null){
+//        this.shapeDrawable.getPaint().setShader(bitmapShader);
+//        }
+//
+//        canvas.drawBitmap(this.bitmap, 0, 0, null);
+//        this.shapeDrawable.draw(canvas);
 
         invalidate();
     }
@@ -63,17 +61,7 @@ public class LoupeView extends View {
         this.bitmap = bitmap;
     }
 
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event) {
-//        final int x = (int) event.getX();
-//        final int y = (int) event.getY();
-//        this.matrix.setTranslate(RADIUS - x * TIMES, RADIUS - y * TIMES);
-//        this.shapeDrawable.getPaint().getShader().setLocalMatrix(this.matrix);
-//
-//        this.shapeDrawable.setBounds(x - RADIUS, y - RADIUS, x + RADIUS, y + RADIUS);
-//        invalidate();
-//        return true;
-//    }
+
 
     public LoupeView(Context context) {
         super(context);

@@ -19,9 +19,7 @@ public class OvalShapeView extends View {
      */
     private void init(){
         setLayerType(LAYER_TYPE_SOFTWARE,null);//关闭硬件加速
-        this.shapeDrawable=new ShapeDrawable(new OvalShape());//绘制一个椭圆形的ShapeDrawable
-        this.shapeDrawable.setBounds(new Rect(50,50,200,100));//定位椭圆位置
-        this.shapeDrawable.getPaint().setColor(Color.GREEN);//显示颜色为绿色
+        this.shapeDrawable=new ShapeDrawable();
     }
 
     @Override
