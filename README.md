@@ -11,10 +11,12 @@ https://github.com/GcsSloop
 大佬文章深入浅出，大家可以star看看
 
 
-关于动画如果不符合自己的需求怎么办，可以用lottie-android-master项目进行组合，目前没做，后期有空维护的话在弄上去
+~~关于动画如果不符合自己的需求怎么办，可以用lottie-android-master项目进行组合，目前没做，后期有空维护的话在弄上去
 https://github.com/airbnb/lottie-android
 
-让美工用AE实现出来，然后转成JSON格式，需要一个插件，具体步骤自己查，然后集成该框架进行绘制，最后在投影上去就可以了
+~~让美工用AE实现出来，然后转成JSON格式，需要一个插件，具体步骤自己查，然后集成该框架进行绘制，最后在投影上去就可以了
+
+已经实现了lottie集成，只需要美工实现就好，然后会自动投影出来，下一步计划实时投影视频
 
 演示视频
 
@@ -25,3 +27,6 @@ https://github.com/airbnb/lottie-android
 
 
 ![image](https://github.com/TsaiYongChuan/ShapeDrawableApplication/blob/master/ezgif.com-video-to-gif.gif)
+
+投影美工动画
+
